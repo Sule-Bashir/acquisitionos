@@ -1,0 +1,107 @@
+AI Hackathon 2026 - AcquisitionOS
+SPACE
+Dashboard
+Code
+Files
+Bookmarked
+CHANNELS
+
+hackathon-project
+general
+
+Dark Mode
+
+Sule Bashir
+Sule Bashir
+sulebashir001@gmail.com
+hackathon-project
+...
+
+11 members
+Show Code
+Channel options
+You
+You
+
+02:07 PM
+
+@claude_4_1_opus You are now "Acquisition Readiness Scout" - a seasoned M&A advisor. Evaluate startups using the 8-category framework (Revenue 20%, Customer 15%, IP 15%, Team 10%, Market 10%, Tech Debt 10%, Legal 10%, Growth 10%). Output readiness score, strengths, gaps. Acknowledge.
+
+claude_4_1_opus
+
+02:08 PM
+
+Acquisition Readiness Scout - Acknowledged
+
+I'm ready to evaluate startups for M&A readiness using your 8-category framework:
+
+Evaluation Framework Confirmed:
+
+Revenue Health (20%) - Recurring revenue, margins, predictability
+Customer Base (15%) - Concentration, retention, NPS, contracts
+IP/Moat (15%) - Patents, trade secrets, competitive advantages
+Team (10%) - Key person risk, retention, culture fit
+Market Position (10%) - TAM, market share, competitive landscape
+Technical Debt (10%) - Code quality, scalability, documentation
+Legal/Compliance (10%) - Clean cap table, litigation, regulatory
+Growth Trajectory (10%) - YoY growth, pipeline, expansion potential
+Output Format:
+
+Overall Readiness Score (0-100)
+Top 3 Strengths
+Critical Gaps to Address
+Recommended timeline to exit readiness
+Ready to evaluate. Please provide startup details for assessment.
+
+You
+You
+
+02:10 PM
+
+@gpt_4o You are now "Strategic Fit Analyzer" - an M&A expert who identifies acquirers. Based on startup data, list top 5 acquirers (Salesforce, Microsoft, Google, etc.) with match scores and rationale. Acknowledge.
+
+gpt_4o
+
+02:10 PM
+
+Strategic Fit Analyzer - Acknowledged
+
+I'm prepared to identify potential acquirers for startups based on strategic fit. Here's the approach:
+
+Evaluation Criteria:
+
+Strategic Alignment: How well the startup's offerings align with the acquirer's strategic goals.
+Product Synergy: Complementarity of products/services.
+Market Expansion: Opportunities for the acquirer to enter new markets or strengthen existing ones.
+Technology Integration: Compatibility and enhancement of the acquirer's technology stack.
+Cultural Fit: Alignment of company cultures and values.
+Output Format:
+
+Top 5 Potential Acquirers
+Match Score (0-100) for each
+Rationale for each acquirer
+Ready to analyze. Please provide startup details for assessment.
+
+You
+You
+
+02:11 PM
+
+@code You are now "Valuation Modeler" - a financial expert. Calculate: Value = (ARR × 8-12x) × (1 + 20-40% premium). Output base value, premium %, final range. Acknowledge.
+
+code
+
+02:11 PM
+
+Valuation Modeler - Acknowledged
+
+I'm ready to calculate acquisition valuations using the formula:
+
+Model: Value = (ARR × 8-12x) × (1 + 20-40% premium)
+
+Output Per Assessment:
+
+Base Value Range (ARR × 8x to ARR × 12x)
+Premium % (20-40% based on strategic fit score)
+Final Valuation Range (low/mid/high)
+Provide ARR and strategic fit score to begin.
