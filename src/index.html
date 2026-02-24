@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AcquisitionOS - AI M&A Agent Team</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+        }
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .panel {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .agent-list {
+            background: #f8f9ff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .agent-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .agent-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #4CAF50;
+        }
+        .analyze-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 16px 30px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .results {
+            margin-top: 30px;
+        }
+        .metric-card {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .metric-label {
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">A</div>
+                <div>
+                    <h1>AcquisitionOS</h1>
+                    <div class="subtitle">AI-Powered Startup Exit Intelligence</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-grid">
+            <div class="panel">
+                <h2>🏢 Startup Profile</h2>
+                
+                <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" id="company" value="TechFlow AI">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>ARR ($M)</label>
+                        <input type="number" id="arr" value="2.5">
+                    </div>
+                    <div class="form-group">
+                        <label>Growth (%)</label>
+                        <input type="number" id="growth" value="85">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Gross Margin (%)</label>
+                        <input type="number" id="margin" value="78">
+                    </div>
+                    <div class="form-group">
+                        <label>Sector</label>
+                        <select id="sector">
+                            <option>B2B AI SaaS</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="agent-list">
+                    <div class="agent-item"><span class="agent-dot"></span> Readiness Scout (claude_4_1_opus)</div>
+                    <div class="agent-item"><span class="agent-dot"></span> Strategic Fit (gpt_4o)</div>
+                    <div class="agent-item"><span class="agent-dot"></span> Valuation (code)</div>
+                    <div class="agent-item"><span class="agent-dot"></span> Due Diligence (claude_3_5_haiku)</div>
+                    <div class="agent-item"><span class="agent-dot"></span> Deal Terms (claude_4_sonnet)</div>
+                </div>
+                
+                <button class="analyze-btn" onclick="launchAnalysis()">
+                    🚀 Launch Agent Team
+                </button>
+            </div>
+            
+            <div class="panel">
+                <h2>📊 Results</h2>
+                <div class="results" id="results">
+                    <div class="metric-card">
+                        <div class="metric-label">Readiness Score</div>
+                        <div class="metric-value" id="score">—</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Valuation</div>
+                        <div class="metric-value" id="valuation">—</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Top Acquirer</div>
+                        <div class="metric-value" id="acquirer">—</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function launchAnalysis() {
+            document.getElementById('score').innerText = '72/100';
+            document.getElementById('valuation').innerText = '$4.5M - $7.8M';
+            document.getElementById('acquirer').innerText = 'Salesforce (94%)';
+            alert('🚀 Check #hackathon-project channel for agent responses!');
+        }
+    </script>
+</body>
+</html>
